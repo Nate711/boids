@@ -44,7 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Classes and Scripts\Boid.js" />
+     <Compile Include="Assets\Classes and Scripts\Boid Behavior Laws.js" />
      <Compile Include="Assets\Classes and Scripts\Flock.js" />
      <Compile Include="Assets\Classes and Scripts\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" />
      <Compile Include="Assets\Classes and Scripts\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" />
