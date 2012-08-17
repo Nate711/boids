@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E18A1AEB-1B35-021D-23B7-E01E799A3A67}</ProjectGuid>
+	<ProjectGuid>{91719E93-74DA-4BEC-A2C8-FFFB75F4BA06}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,29 +44,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Classes and Scripts\Boid.js" />
-     <Compile Include="Assets\Classes and Scripts\Flock.js" />
-     <Compile Include="Assets\Classes and Scripts\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" />
-     <Compile Include="Assets\Classes and Scripts\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" />
-     <Compile Include="Assets\Classes and Scripts\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.js" />
-     <Compile Include="Assets\Classes and Scripts\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" />
-     <Compile Include="Assets\Classes and Scripts\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
-     <Compile Include="Assets\Classes and Scripts\Standard Assets\Scripts\Camera Scripts\MouseOrbit.js" />
-     <Compile Include="Assets\Classes and Scripts\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js" />
-     <Compile Include="Assets\Classes and Scripts\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js" />
-     <Compile Include="Assets\Classes and Scripts\Standard Assets\Scripts\General Scripts\DragRigidbody.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FollowTransform.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Joystick.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\ObliqueNear.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\PlayerRelativeControl.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\RollABall.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\RotationConstraint.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\SidescrollControl.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\SmoothFollow2D.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\ZoomCamera.js" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\tapcontrol.js" />
+     <Compile Include="Assets\Classes and Scripts\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Classes and Scripts\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
+     <Compile Include="Assets\Classes and Scripts\Standard Assets\Scripts\Utility Scripts\CombineChildren.cs" />
+     <Compile Include="Assets\Classes and Scripts\Standard Assets\Scripts\Utility Scripts\MeshCombineUtility.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />

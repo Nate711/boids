@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Add Force.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Classes and Scripts\Boid.js">
     <Files>
-      <File FileName="Assets\Add Force.js" Line="11" Column="21" />
+      <File FileName="Assets\Classes and Scripts\Boid.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
