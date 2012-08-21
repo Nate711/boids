@@ -1,7 +1,5 @@
 /*DO NOT REMOVE --> */#pragma strict
 
-//I'VE HAD PROBLEMS IN THE PAST WITH THE SIZE OF THE SPHERE (THOUGH I MAY HAVE FIXED IT). NEEDS TO BE DEBUGGED!!!
-
 @HideInInspector
 var sphere : Transform;
 
@@ -11,6 +9,12 @@ var sphereCollider : SphereCollider;
 @HideInInspector
 var radius : float;
 
+@HideInInspector
+var boidsInNeighborhood : Collider[] = [];
+
+@HideInInspector
+var boidLayer : LayerMask = LayerMask.NameToLayer("Boid");
+
 function Start () {
 	sphere = transform.Find("Perception Sphere");
 	sphereCollider = sphere.collider;
@@ -18,19 +22,49 @@ function Start () {
 }
 
 function Update () {
-	FindNeighbors();
+	boidsInNeighborhood = FindNeighbors();
+	rigidbody.velocity += Cohesion();
 }
 
 function FindNeighbors (){
 	
-	var objectsInSphere : Collider[] = Physics.OverlapSphere(transform.position,radius);
-	var boids : Array = [];
+	var boidCollidersInSphere : Collider[] = Physics.OverlapSphere(transform.position,radius,boidLayer);
+	Debug.Log(boidCollidersInSphere.Length);
+	var boidTransformsInSphere : Transform[] = new Transform[boidCollidersInSphere.length];
+	
+	for (var i = 0; i < boidTransformsInSphere.length; i++){
+		boidTransformsInSphere[i] = boidCollidersInSphere[i].transform;
+	}
+	/*var boidsArray : Transform[] = [];
 	
 	for ( var col : Collider in objectsInSphere ){
 			if ( col.tag == "Boid" ){
-				boids.Add(col.transform.root);
+				boidsArray.Add(col.transform.root);
 			}
 		}
-	
-	return boids;
+	var boids : Transform[];
+	boids = boidsArray;
+	return boids;*/
+	return boidCollidersInSphere;
+}
+
+function Cohesion () {
+	//begin calculate the average position of boids in neighborhood
+	var cohesionVector : Vector3 = Vector3.zero;
+	for (var boid : Collider in boidsInNeighborhood){
+		cohesionVector += boid.transform.position;
+	//Debug.Log(boid.transform.position);
+	}
+	if(boidsInNeighborhood.length){
+		Debug.Log("cohesionVector before: " + cohesionVector);
+		cohesionVector /= boidsInNeighborhood.length; //end calculation
+		cohesionVector -= transform.position; //subtraction own position to get distance to average position
+		Debug.Log("cohesionVector after: " + cohesionVector);
+		return cohesionVector;
+	}
+	return Vector3.zero;
+}
+
+function SteeringModifier(){
+	return true;
 }
