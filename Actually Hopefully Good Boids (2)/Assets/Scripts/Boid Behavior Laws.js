@@ -27,6 +27,8 @@ function Update () {
 }
 
 function FindNeighbors (){
+	// JOSH (this is Nathan) make sure neighbors doesn't include the boid
+	// I don't know enough about unity to answer this myself	
 	
 	var boidCollidersInSphere : Collider[] = Physics.OverlapSphere(transform.position,radius,boidLayer);
 	Debug.Log(boidCollidersInSphere.Length);
