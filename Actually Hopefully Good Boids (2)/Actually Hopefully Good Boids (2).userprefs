@@ -1,25 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Boid Behavior Laws.js">
-    <Files>
-      <File FileName="Assets\Scripts\Boid Behavior Laws.js" Line="19" Column="2" />
-      <File FileName="..\..\..\..\Desktop\Original Josh Liquid\JoshLiquid\Assets\_BoidScripts\ThreeLaws.js" Line="39" Column="27" />
-      <File FileName="..\..\..\Test Project\Assets\Scripts\Boids in Sphere of Influence.js" Line="10" Column="24" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-UnityScript" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Boid Behavior Laws.js" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
